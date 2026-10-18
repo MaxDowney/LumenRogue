@@ -1,0 +1,43 @@
+# Build products and downloaded toolchains
+bin/
+obj/
+dist/
+cpp/.zig*/
+*.exe
+*.dll
+*.pdb
+*.obj
+*.o
+*.a
+*.lib
+*.zip
+*.tar.xz
+
+# Player progress is never part of the source or public release
+*.save
+*.save.*
+lumenrogue-save*.json
+
+# Local QA captures, one-off publication tooling, and editor state
+cpp/qa*/
+cpp/assets/*-preview.png
+cpp/.selftest.*
+.local-publish/
+__pycache__/
+*.pyc
+.vs/
+.vscode/
+.idea/
+.codex/
+.agents/
+*.user
+*.suo
+
+# Credentials / machine-local configuration
+.env
+.env.*
+*.pem
+*.key
+.aws/
+Thumbs.db
+.DS_Store
